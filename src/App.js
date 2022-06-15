@@ -3,6 +3,7 @@ import { getPokeData } from "./API/service";
 import { GridPoke } from "./components/GridPoke";
 import { Header } from "./components/Header";
 import Pagination from "./components/Pagination";
+import styles from "./App.module.css";
 
 function App() {
   const [pokeData, setPokeData] = useState([]);
@@ -28,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.cont}>
       <header>
         <Header />
       </header>
@@ -40,6 +41,12 @@ function App() {
           onNext={onNext}
         />
         <GridPoke pokeData={pokeData} />
+        <Pagination
+          next={info.next}
+          prev={info.previous}
+          onPrevious={onPrevious}
+          onNext={onNext}
+        />
       </main>
     </div>
   );

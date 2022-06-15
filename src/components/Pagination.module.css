@@ -20,6 +20,11 @@
   margin: 10px;
 }
 .buttonpag:hover {
-  background-color: rgb(11, 66, 219);
+  background-color: rgb(251, 21, 21);
   opacity: 0.9;
+}
+@media (max-width: 500px) {
+  .buttonpag {
+    width: 150px;
+  }
 }

@@ -7,7 +7,7 @@ export function PokeCard({ name }) {
   return (
     <div className={style.cardCont}>
       <img src={imgUrl} alt={name} className={style.img} />
-      <p>{name}</p>
+      <p className={style.name}>{name}</p>
     </div>
   );
 }
