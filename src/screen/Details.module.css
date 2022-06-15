@@ -2,6 +2,7 @@
   background-color: blueviolet;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 .contImage {
   width: 30%;
