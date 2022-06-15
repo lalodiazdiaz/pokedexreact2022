@@ -1,0 +1,19 @@
+.cont {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+  height: 60px;
+}
+.icon {
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.title {
+  text-align: center;
+  margin-top: 10px;
+  color: aliceblue;
+}

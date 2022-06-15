@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import { getPokeData } from "./API/service";
+import { GridPoke } from "./components/GridPoke";
+import { Header } from "./components/Header";
+import Pagination from "./components/Pagination";
 
 function App() {
+  const [pokeData, setPokeData] = useState([]);
+  const [info, setInfo] = useState({});
+  const baseurl = "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0";
+
+  const onPrevious = () => {
+    getPokemon(info.previous);
+  };
+
+  const onNext = () => {
+    getPokemon(info.next);
+  };
+
+  const getPokemon = (url) => {
+    getPokeData(url).then((data) => {
+      setPokeData(data.results);
+      setInfo(data);
+    });
+  };
+  useEffect(() => {
+    getPokemon(baseurl);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <Header />
       </header>
+      <main>
+        <Pagination
+          next={info.next}
+          prev={info.previous}
+          onPrevious={onPrevious}
+          onNext={onNext}
+        />
+        <GridPoke pokeData={pokeData} />
+      </main>
     </div>
   );
 }

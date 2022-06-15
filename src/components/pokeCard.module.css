@@ -1,0 +1,17 @@
+.cardCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  /* background-image: url("https://fr.phoneky.com/wallpapers/?id=w12w1727676"); */
+  background-color: rgb(218, 134, 134);
+}
+
+.cardCont:hover {
+  cursor: pointer;
+  background-color: rgb(139, 92, 92);
+}
+.img {
+  width: 100%;
+}
