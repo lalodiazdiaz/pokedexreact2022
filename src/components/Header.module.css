@@ -17,3 +17,7 @@
   margin-top: 10px;
   color: aliceblue;
 }
+.header {
+  display: flex;
+  width: 20%;
+}

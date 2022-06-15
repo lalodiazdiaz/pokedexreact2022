@@ -1,0 +1,16 @@
+.cont {
+  background-color: blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contImage {
+  width: 30%;
+  height: auto;
+  border: 5px solid black;
+  margin: 2%;
+  border-radius: 15%;
+  background-color: lightcyan;
+}
+.img {
+  width: 100%;
+}

@@ -5,7 +5,7 @@ export function GridPoke({ pokeData }) {
   return (
     <div className={styles.gridCont}>
       {pokeData.map((poke, i) => (
-        <PokeCard key={i} name={poke.name} />
+        <PokeCard key={i} name={poke.name} id={i} />
       ))}
     </div>
   );
