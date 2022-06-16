@@ -7,6 +7,6 @@ export const getPokeData = async (url) => {
 
 export const pokemon = async (url) => {
   const result = await axios.get(url);
-  console.log(result);
+  console.log(result.data);
   return result.data;
 };

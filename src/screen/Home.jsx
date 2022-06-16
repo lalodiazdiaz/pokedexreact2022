@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { getPokeData } from "../API/service";
 import { GridPoke } from "../components/GridPoke";
-import { Header } from "../components/Header";
 import Pagination from "../components/Pagination";
 import styles from "../App.module.css";
 
@@ -35,9 +34,6 @@ export function Home() {
 
   return (
     <div className={styles.cont}>
-      <header>
-        <Header />
-      </header>
       <main>
         <Pagination
           next={info.next}
