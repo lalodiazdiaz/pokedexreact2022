@@ -4,8 +4,10 @@
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  /* background-image: url("https://fr.phoneky.com/wallpapers/?id=w12w1727676"); */
-  background-color: rgb(218, 134, 134);
+  background: url("https://www.freeiconspng.com/uploads/pokeball-icon-11.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(231, 104, 104);
 }
 
 .cardCont:hover {
@@ -14,6 +16,7 @@
 }
 .img {
   width: 100%;
+  background-color: ;
 }
 
 .name {

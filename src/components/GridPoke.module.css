@@ -6,12 +6,12 @@
   justify-content: center;
   align-items: center;
   margin-top: -20px;
+  background-color: lightslategray;
 }
 
 @media (max-width: 500px) {
   .gridCont {
     grid-template-columns: repeat(auto-fill, 250px);
-    padding: 40px;
     gap: 20px;
   }
 }

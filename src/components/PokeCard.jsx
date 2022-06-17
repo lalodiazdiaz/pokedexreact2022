@@ -1,7 +1,7 @@
 import style from "./pokeCard.module.css";
 import { Link } from "react-router-dom";
 
-export function PokeCard({ name }) {
+export function PokeCard({ name, id }) {
   const imgUrl = `https://img.pokemondb.net/sprites/home/normal/${name}.png`;
 
   return (

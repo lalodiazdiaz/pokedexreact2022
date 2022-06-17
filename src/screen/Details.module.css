@@ -2,6 +2,8 @@
   width: 100%;
   margin: 0;
   background-color: black;
+  display: flex;
+  flex-wrap: wrap;
 }
 .cont {
   display: flex;
@@ -9,14 +11,15 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: rgb(165, 133, 196);
+  background-color: rgb(231, 104, 104);
+  flex-direction: row;
 }
 .contImage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 38%;
   height: auto;
   border: 5px solid black;
   margin: 2%;
@@ -29,21 +32,52 @@
   margin: 0;
   font-size: 30px;
   text-align: center;
+  font-weight: bold;
 }
 .img {
   width: 100%;
   object-fit: fill;
 }
+.types {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: lightslategray;
+  width: 100%;
+}
+.Onetype {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  background-color: lightslategray;
+}
+.type {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
 .details {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightcoral;
+  background-color: lightslategray;
   width: 100%;
   height: 100%;
 }
-
 .details p {
+  text-align: start;
+  margin-left: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 5px;
+  text-transform: capitalize;
+}
+.types p {
   text-align: start;
   margin-left: 15px;
   font-size: 25px;
@@ -59,8 +93,8 @@
   background-color: lightskyblue;
   border: 5px solid black;
   border-radius: 30px;
-  width: 50%;
-  margin-left: 5%;
+  width: 100%;
+  margin-top: 6%;
   height: 100%;
 }
 .stat {
@@ -77,25 +111,48 @@
   font-weight: bold;
   margin: 5px;
   text-transform: capitalize;
-  width: 50%;
+  width: 100%;
 }
 .DetailsStast {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
-  height: 300px;
-  background-color: yellowgreen;
+  height: 400;
+  width: 20%;
+  margin-top: -2%;
+  flex-direction: column;
+  padding: 10px;
+}
+.moves {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+.moves p {
+  width: 100%;
+}
+
+.titlemoves {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+  margin: -1px;
+  border-radius: 15px 15px 0px 0px;
 }
 
 @media (max-width: 500px) {
   .contImage {
     width: 100%;
   }
-  .DetailsStast p {
-  }
+
   .cont {
     width: 100%;
     height: auto;
+  }
+  .DetailsStast {
+    width: 100%;
+    margin: 2%;
   }
 }

@@ -9,6 +9,7 @@ export function Home() {
   const [info, setInfo] = useState({});
   const [next, setNext] = useState("");
   const [prev, setPrev] = useState("");
+
   const baseurl = "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0";
 
   const onPrevious = () => {
