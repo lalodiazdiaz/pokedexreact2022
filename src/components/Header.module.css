@@ -1,6 +1,6 @@
 .cont {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   background-color: black;
   width: 97.3%;
