@@ -147,14 +147,6 @@ export function Details() {
               <p>{dataPoke.moves[2].move.name}</p>
               <p>{dataPoke.moves[3].move.name}</p>
               <p>{dataPoke.moves[4].move.name}</p>
-              <p>{dataPoke.moves[5].move.name}</p>
-              <p>{dataPoke.moves[6].move.name}</p>
-              <p>{dataPoke.moves[7].move.name}</p>
-              <p>{dataPoke.moves[8].move.name}</p>
-              <p>{dataPoke.moves[9].move.name}</p>
-              <p>{dataPoke.moves[10].move.name}</p>
-              <p>{dataPoke.moves[11].move.name}</p>
-              <p>{dataPoke.moves[12].move.name}</p>
 
               <br />
             </div>
