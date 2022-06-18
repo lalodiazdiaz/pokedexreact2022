@@ -1,0 +1,33 @@
+.moves {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: lightskyblue;
+  border: 5px solid black;
+  border-radius: 30px;
+  width: 100%;
+  margin-top: 6%;
+  height: 100%;
+}
+.moves p {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 5px;
+  text-transform: capitalize;
+  text-align: justify;
+  width: 100%;
+}
+.titlemoves {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+  margin: -1px;
+  border-radius: 15px 15px 0px 0px;
+}
