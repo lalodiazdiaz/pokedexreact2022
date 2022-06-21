@@ -39,3 +39,9 @@
   margin: 5px;
   text-transform: capitalize;
 }
+
+@media (max-width: 500px) {
+  img {
+    width: 35%;
+  }
+}
