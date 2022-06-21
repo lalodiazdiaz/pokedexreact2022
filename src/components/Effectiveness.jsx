@@ -2,15 +2,14 @@ import { colors, TYPE_IMAGE } from "../extra/diseño";
 import styles from "./Effectiveness.module.css";
 
 export function Effectiveness({ effective, name }) {
-  //   console.log(effective.double_damage_from);
-
   return (
     <div className={styles.contTypes}>
       <p className={styles.titleEffec}>Type effectiveness </p>
       <p className={styles.subTitle}>double damage from: </p>
       <div className={styles.type}>
-        {effective.double_damage_from.map((data) => (
+        {effective.double_damage_from.map((data, i) => (
           <img
+            key={i}
             src={TYPE_IMAGE[data.name]}
             alt=""
             style={{
@@ -23,8 +22,9 @@ export function Effectiveness({ effective, name }) {
       </div>
       <p className={styles.subTitle}>double_damage_to: </p>
       <div className={styles.type}>
-        {effective.double_damage_to.map((data) => (
+        {effective.double_damage_to.map((data, i) => (
           <img
+            key={i}
             src={TYPE_IMAGE[data.name]}
             alt=""
             style={{
@@ -37,8 +37,9 @@ export function Effectiveness({ effective, name }) {
       </div>
       <p className={styles.subTitle}>half_damage_from: </p>
       <div className={styles.type}>
-        {effective.half_damage_from.map((data) => (
+        {effective.half_damage_from.map((data, i) => (
           <img
+            key={i}
             src={TYPE_IMAGE[data.name]}
             alt=""
             style={{
@@ -51,8 +52,9 @@ export function Effectiveness({ effective, name }) {
       </div>
       <p className={styles.subTitle}>half_damage_to: </p>
       <div className={styles.type}>
-        {effective.half_damage_to.map((data) => (
+        {effective.half_damage_to.map((data, i) => (
           <img
+            key={i}
             src={TYPE_IMAGE[data.name]}
             alt=""
             style={{
@@ -65,8 +67,9 @@ export function Effectiveness({ effective, name }) {
       </div>
       <p className={styles.subTitle}>no_damage_from: </p>
       <div className={styles.type}>
-        {effective.no_damage_from.map((data) => (
+        {effective.no_damage_from.map((data, i) => (
           <img
+            key={i}
             src={TYPE_IMAGE[data.name]}
             alt=""
             style={{
@@ -79,8 +82,9 @@ export function Effectiveness({ effective, name }) {
       </div>
       <p className={styles.subTitle}>no_damage_to: </p>
       <div className={styles.type}>
-        {effective.no_damage_to.map((data) => (
+        {effective.no_damage_to.map((data, i) => (
           <img
+            key={i}
             src={TYPE_IMAGE[data.name]}
             alt=""
             style={{

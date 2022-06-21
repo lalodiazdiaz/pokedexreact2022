@@ -17,3 +17,10 @@ export const typeEfective = async (url) => {
   const result = await axios.get(url);
   return result.data;
 };
+
+/**get pokemon species */
+
+export const pokemonSpecies = async (url) => {
+  const result = await axios.get(url);
+  return result.data;
+};
