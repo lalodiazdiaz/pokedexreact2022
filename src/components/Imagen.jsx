@@ -3,7 +3,6 @@ import { colors } from "../extra/diseño";
 
 export function Imagen({ name, id, types }) {
   const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${id}.png`;
-  console.log(types);
   return (
     <div
       className={styles.contImg}

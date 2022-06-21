@@ -1,15 +1,25 @@
-.contInfo {
+.contTypes {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 90%;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: lightskyblue;
   border: 5px solid black;
   border-radius: 30px;
-  width: 100%;
-  margin-top: 6%;
-  height: 100%;
 }
-.titleInfo {
+.type {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+.titleEffec {
   width: 100%;
   text-align: center;
   color: white;
@@ -18,20 +28,17 @@
   border-radius: 15px 15px 0px 0px;
 }
 
-.contInfo p {
+.contTypes p {
   font-size: 25px;
   font-weight: bold;
-  margin: 5px;
   text-transform: capitalize;
-  text-align: justify;
   width: 100%;
 }
+.subTitle {
+  text-align: center;
+  text-decoration: underline;
+}
 
-.data {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 1px;
-  width: 100%;
+img {
+  width: 8%;
 }

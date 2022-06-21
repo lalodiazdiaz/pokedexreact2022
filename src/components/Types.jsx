@@ -10,7 +10,7 @@ export function Types({ types }) {
           {types.map((type, i) => (
             <div key={i} className={styles.type}>
               <p>{type.type.name}</p>
-              <img src={TYPE_IMAGE[type.type.name]} alt="" />
+              <img src={TYPE_IMAGE[type.type.name]} alt={type.type.name} />
               <br />
             </div>
           ))}
@@ -19,7 +19,10 @@ export function Types({ types }) {
         <div className={styles.types}>
           <div className={styles.Onetype}>
             <p>{types[0].type.name}</p>
-            <img src={TYPE_IMAGE[types[0].type.name]} alt="" />
+            <img
+              src={TYPE_IMAGE[types[0].type.name]}
+              alt={types[0].type.name}
+            />
             <br />
           </div>
         </div>
