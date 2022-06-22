@@ -32,7 +32,7 @@ export function Eggs({ data }) {
       </div>
       <div className={styles.eggs}>
         <p>Habitat: </p>
-        <p>{data.habitat.name}</p>
+        {data.habitat ? <p>{data.habitat.name}</p> : <p>N/A</p>}
       </div>
       <div className={styles.eggs}>
         <p>Color: </p>

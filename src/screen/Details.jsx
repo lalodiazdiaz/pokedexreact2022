@@ -10,6 +10,7 @@ import { Moves } from "../components/Moves";
 import { Types } from "../components/Types";
 import { Effectiveness } from "../components/Effectiveness";
 import { Eggs } from "../components/Eggs";
+import { Header } from "../components/Header";
 export function Details() {
   const { pokeName } = useParams();
   const pokeApi = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
@@ -40,30 +41,33 @@ export function Details() {
   }
 
   return (
-    <div className={styles.mainCont}>
-      <div className={styles.cont}>
-        <div className={styles.contImage}>
-          <Imagen
-            types={dataPoke.types[0].type.name}
-            name={pokeName}
-            id={dataPoke.id}
-          />
-          <Types types={dataPoke.types} />
-        </div>
-        <div className={styles.DetailsStast}>
-          <Info info={dataPoke} />
-          <Stats stats={dataPoke.stats} />
-          <Abilities ability={dataPoke.abilities} />
-        </div>
-        <div className={styles.DetailsStast}>
-          <Moves moves={dataPoke.moves} />
-          <Eggs data={species} />
-        </div>
-        <div className={styles.contTypesEfec}>
-          <Effectiveness
-            effective={efective.damage_relations}
-            name={efective.name}
-          />
+    <div style={{ width: "100%" }}>
+      <Header />
+      <div className={styles.mainCont}>
+        <div className={styles.cont}>
+          <div className={styles.contImage}>
+            <Imagen
+              types={dataPoke.types[0].type.name}
+              name={pokeName}
+              id={dataPoke.id}
+            />
+            <Types types={dataPoke.types} />
+          </div>
+          <div className={styles.DetailsStast}>
+            <Info info={dataPoke} />
+            <Stats stats={dataPoke.stats} />
+            <Abilities ability={dataPoke.abilities} />
+          </div>
+          <div className={styles.DetailsStast}>
+            <Moves moves={dataPoke.moves} />
+            <Eggs data={species} />
+          </div>
+          <div className={styles.contTypesEfec}>
+            <Effectiveness
+              effective={efective.damage_relations}
+              name={efective.name}
+            />
+          </div>
         </div>
       </div>
     </div>

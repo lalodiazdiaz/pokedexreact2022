@@ -7,7 +7,7 @@ export function Info({ info }) {
     <div className={styles.contInfo}>
       <h2 className={styles.titleInfo}>Information</h2>
       <div className={styles.data}>
-        <p>ID:</p>
+        <p>Id:</p>
         <p> {info.id}</p>
       </div>
       <div className={styles.data}>
