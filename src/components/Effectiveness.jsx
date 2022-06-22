@@ -20,7 +20,7 @@ export function Effectiveness({ effective, name }) {
           />
         ))}
       </div>
-      <p className={styles.subTitle}>double_damage_to: </p>
+      <p className={styles.subTitle}>Double damage to: </p>
       <div className={styles.type}>
         {effective.double_damage_to.map((data, i) => (
           <img
@@ -35,7 +35,7 @@ export function Effectiveness({ effective, name }) {
           />
         ))}
       </div>
-      <p className={styles.subTitle}>half_damage_from: </p>
+      <p className={styles.subTitle}>Half damage from: </p>
       <div className={styles.type}>
         {effective.half_damage_from.map((data, i) => (
           <img
@@ -50,7 +50,7 @@ export function Effectiveness({ effective, name }) {
           />
         ))}
       </div>
-      <p className={styles.subTitle}>half_damage_to: </p>
+      <p className={styles.subTitle}>Half damage to: </p>
       <div className={styles.type}>
         {effective.half_damage_to.map((data, i) => (
           <img
@@ -65,7 +65,7 @@ export function Effectiveness({ effective, name }) {
           />
         ))}
       </div>
-      <p className={styles.subTitle}>no_damage_from: </p>
+      <p className={styles.subTitle}>No damage from: </p>
       <div className={styles.type}>
         {effective.no_damage_from.map((data, i) => (
           <img
@@ -80,7 +80,7 @@ export function Effectiveness({ effective, name }) {
           />
         ))}
       </div>
-      <p className={styles.subTitle}>no_damage_to: </p>
+      <p className={styles.subTitle}>No damage to: </p>
       <div className={styles.type}>
         {effective.no_damage_to.map((data, i) => (
           <img
