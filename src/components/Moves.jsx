@@ -9,8 +9,6 @@ export function Moves({ moves }) {
         <p>🔹 {moves[1].move.name}</p>
         <p>🔹 {moves[2].move.name}</p>
         <p>🔹 {moves[3].move.name}</p>
-        <p>🔹 {moves[4].move.name}</p>
-
         <br />
       </div>
     </div>

@@ -35,3 +35,9 @@ export const pokemonSpecies = async (url) => {
   const result = await axios.get(url);
   return result.data;
 };
+
+/**get eveolucion chain */
+export const getChainEvolution = async (url) => {
+  const result = await axios.get(url);
+  return result.data.chain;
+};
