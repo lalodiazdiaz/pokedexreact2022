@@ -17,6 +17,7 @@ import { Effectiveness } from "../components/Effectiveness";
 import { Eggs } from "../components/Eggs";
 import { Header } from "../components/Header";
 import { Loading } from "../components/Loading";
+import { Evolutions } from "../components/Evolutions";
 export function Details() {
   const { pokeName } = useParams();
   const pokeApi = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
@@ -28,7 +29,6 @@ export function Details() {
   const [loading, setLoading] = useState(true);
   const [efective, setEfective] = useState([]);
   const [species, setSpecies] = useState([]);
-  const [variation, setVariation] = useState([]);
   const [chainEvolution, setChainEvolution] = useState([]);
 
   useEffect(() => {
@@ -38,7 +38,6 @@ export function Details() {
         setEfective(type);
         pokemonSpecies(speciesUrl + data.id).then((specie) => {
           setSpecies(specie);
-          setVariation(species.varieties);
           getChainEvolution(specie.evolution_chain.url).then((chain) => {
             setChainEvolution(chain);
             setLoading(false);
@@ -79,7 +78,7 @@ export function Details() {
             </div>
 
             <div className={styles.contTypesEfec}>
-              <h1>hola</h1>
+              <Evolutions chain={chainEvolution} types={dataPoke.types} />
             </div>
           </div>
         </div>
