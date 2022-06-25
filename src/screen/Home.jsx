@@ -22,6 +22,7 @@ export function Home() {
   const [next, setNext] = useState("");
   const [prev, setPrev] = useState("");
   const [onPagination, setonPagination] = useState(true);
+  const [loading, setloading] = useState(true);
 
   const baseurl = "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0";
 
@@ -77,6 +78,7 @@ export function Home() {
       setPrev(data.previous);
       setPokeData(data.results);
       setInfo(data);
+      setloading(false);
     });
   };
 
@@ -87,6 +89,7 @@ export function Home() {
   return (
     <div className={styles.contMainPage}>
       <Header start={backStart} />
+
       <Generations
         kanto={getKanto}
         johto={getJohto}
@@ -97,7 +100,6 @@ export function Home() {
         alola={getAlola}
         galar={getGalar}
       />
-
       {onPagination ? (
         <main>
           <Pagination
@@ -106,6 +108,7 @@ export function Home() {
             onPrevious={onPrevious}
             onNext={onNext}
           />
+
           <GridPoke pokeData={pokeData} />
           <Pagination
             next={info.next}
