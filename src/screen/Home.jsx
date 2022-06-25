@@ -77,7 +77,6 @@ export function Home() {
       setPrev(data.previous);
       setPokeData(data.results);
       setInfo(data);
-      setloading(false);
     });
   };
 
