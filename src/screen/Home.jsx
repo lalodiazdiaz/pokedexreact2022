@@ -22,7 +22,6 @@ export function Home() {
   const [next, setNext] = useState("");
   const [prev, setPrev] = useState("");
   const [onPagination, setonPagination] = useState(true);
-  const [loading, setloading] = useState(true);
 
   const baseurl = "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0";
 
