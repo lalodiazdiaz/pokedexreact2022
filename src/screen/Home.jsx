@@ -23,7 +23,7 @@ export function Home() {
   const [prev, setPrev] = useState("");
   const [onPagination, setonPagination] = useState(true);
 
-  const baseurl = "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0";
+  const baseurl = "https://pokeapi.co/api/v2/pokemon?limit=16&offset=0";
 
   const getKanto = () => {
     getPokemon(urlGen1);
