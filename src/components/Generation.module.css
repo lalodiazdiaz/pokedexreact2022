@@ -10,8 +10,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 6%;
+ padding-top: 1%;
   background-color: #778899;
+
 }
 
 .contButtons button {
@@ -42,6 +43,6 @@
     margin: 1%;
   }
   .contMenu {
-    padding-top: 20%;
+    padding-top: 5%;
   }
 }

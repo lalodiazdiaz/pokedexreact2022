@@ -20,7 +20,7 @@ export function Evolutions({ chain, types }) {
 
   return (
     <div className={styles.contEvolution}>
-      <p className={styles.titleEvolution}>Evolution Chain</p>
+      <h2 className={styles.titleEvolution}>Evolution Chain</h2>
       {evs.map((ev) => (
         <div className={styles.imgEv}>
           <img

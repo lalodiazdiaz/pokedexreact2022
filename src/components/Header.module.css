@@ -4,14 +4,17 @@
   align-items: center;
   background-color: black;
   width: 100%;
-  height: 10%;
-  position: fixed;
+  height: 80px;
+  position: relative;
+
+
 }
 .icon {
   text-align: center;
   background-color: white;
   border-radius: 50%;
   margin-right: 10px;
+  margin-left: 20px;
 }
 .title {
   text-align: center;
@@ -30,5 +33,8 @@
   .cont {
     width: 100%;
     height: 65px;
+  }
+  .icon{
+    margin-left: 15px;
   }
 }

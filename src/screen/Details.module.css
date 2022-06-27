@@ -10,7 +10,7 @@
   align-items: center;
   background-color: rgb(231, 104, 104);
   flex-direction: row;
-  padding-top: 5%;
+ 
 }
 .contImage {
   display: flex;
@@ -46,7 +46,7 @@
   .cont {
     width: 100%;
     height: auto;
-    padding-top: 20%;
+    padding-top: 5%;
   }
   .DetailsStast {
     width: 100%;
