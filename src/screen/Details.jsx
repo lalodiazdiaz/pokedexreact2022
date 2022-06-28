@@ -18,6 +18,7 @@ import { Eggs } from "../components/Eggs";
 import { Header } from "../components/Header";
 import { Loading } from "../components/Loading";
 import { Evolutions } from "../components/Evolutions";
+import { Varieties } from "../components/Varieties";
 export function Details() {
   const { pokeName } = useParams();
   const pokeApi = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
@@ -58,6 +59,7 @@ export function Details() {
                 types={dataPoke.types[0].type.name}
                 name={pokeName}
                 id={dataPoke.id}
+                official={dataPoke.sprites.other.home.front_default}
               />
               <Types types={dataPoke.types} />
             </div>
@@ -80,6 +82,9 @@ export function Details() {
             <div className={styles.contTypesEfec}>
               <Evolutions chain={chainEvolution} types={dataPoke.types} />
             </div>
+            {/* <div className={styles.contTypesEfec}>
+              <Varieties varieties={species.varieties} types={dataPoke.types}  official={dataPoke.sprites.other.home.front_default}/>
+            </div> */}
           </div>
         </div>
       ) : (
