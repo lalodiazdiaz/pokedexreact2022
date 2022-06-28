@@ -18,7 +18,7 @@ import { Eggs } from "../components/Eggs";
 import { Header } from "../components/Header";
 import { Loading } from "../components/Loading";
 import { Evolutions } from "../components/Evolutions";
-import { Varieties } from "../components/Varieties";
+// import { Varieties } from "../components/Varieties";
 export function Details() {
   const { pokeName } = useParams();
   const pokeApi = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
