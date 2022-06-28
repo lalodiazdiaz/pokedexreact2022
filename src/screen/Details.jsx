@@ -59,7 +59,7 @@ export function Details() {
                 types={dataPoke.types[0].type.name}
                 name={pokeName}
                 id={dataPoke.id}
-                official={dataPoke.sprites.other.home.front_default}
+                official={dataPoke.sprites.other.home}
               />
               <Types types={dataPoke.types} />
             </div>

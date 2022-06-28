@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {
   getPokeData,
+  // mega,
   urlGen1,
   urlGen2,
   urlGen3,
@@ -58,6 +59,10 @@ export function Home() {
     getPokemon(urlGen8);
     setonPagination(false);
   };
+  // const getMega = () => {
+  //   getPokemon(mega);
+  //   setonPagination(false);
+  // };
   const onPrevious = () => {
     getPokemon(prev);
   };
@@ -97,6 +102,7 @@ export function Home() {
         kalos={getKalos}
         alola={getAlola}
         galar={getGalar}
+        // mega ={getMega}
       />
       {onPagination ? (
         <main>

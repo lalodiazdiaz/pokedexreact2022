@@ -10,6 +10,7 @@ export const urlGen5 = "https://pokeapi.co/api/v2/pokemon?limit=156&offset=493";
 export const urlGen6 = "https://pokeapi.co/api/v2/pokemon?limit=72&offset=649";
 export const urlGen7 = "https://pokeapi.co/api/v2/pokemon?limit=88&offset=721";
 export const urlGen8 = "https://pokeapi.co/api/v2/pokemon?limit=96&offset=809";
+export const mega = 'https://pokeapi.co/api/v2/pokemon?limit=58&offset=937';
 
 /**get all pokemon */
 export const getPokeData = async (url) => {

@@ -9,6 +9,7 @@ export function Generations({
   kalos,
   alola,
   galar,
+  // mega
 }) {
   const handleGen1 = () => {
     kanto();
@@ -34,6 +35,9 @@ export function Generations({
   const handleGen8 = () => {
     galar();
   };
+  // const handleMega = () => {
+  //   mega();
+  // };
   return (
     <div className={styles.contMenu}>
       <Menu
@@ -54,6 +58,7 @@ export function Generations({
           <button onClick={handleGen6}> Generation 6</button>
           <button onClick={handleGen7}> Generation 7</button>
           <button onClick={handleGen8}> Generation 8</button>
+          {/* <button onClick={handleMega}> Mega evolutions</button> */}
         </div>
       </Menu>
     </div>
